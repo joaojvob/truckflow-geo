@@ -1,0 +1,16 @@
+server:
+  port: ${SERVER_PORT:8081}
+
+spring:
+  application:
+    name: truckflow-geo
+
+google:
+  maps:
+    api-key: ${GOOGLE_MAPS_API_KEY:}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
